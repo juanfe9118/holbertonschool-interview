@@ -1,0 +1,2 @@
+# Insert in sorted linked list
+### This directory is for practicing algorithms. This time we are inserting a node into a sorted singly linked list, and as such the insertion of the new node has to be in the correct place depending on the number being inserted into the list.

@@ -3,3 +3,6 @@
 
 #### [0x00-lockboxes](0x00-lockboxes)
 * This directory is for practicing algorithms.
+
+#### [0x01-insert_in_sorted_linked_list](./0x01-insert_in_sorted_linked_list)
+* This directory is for practicing algorithms.
