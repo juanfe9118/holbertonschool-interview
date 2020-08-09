@@ -9,3 +9,6 @@
 
 #### [0x02-heap_insert](./0x02-heap_insert)
 * This directory is for practicing algorithms.
+
+#### [0x03-minimum_operations](./0x03-minimum_operations)
+* This directory is for practicing algorithms.
