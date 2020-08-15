@@ -1,0 +1,2 @@
+# Sandpiles
+### This directory is for practicing algorithms. We are adding sandpiles in this algorithm, and balancing the pile if it becomes unstable after the sum. The pile is printed after each tumbling.

@@ -12,3 +12,6 @@
 
 #### [0x03-minimum_operations](./0x03-minimum_operations)
 * This directory is for practicing algorithms.
+
+#### [0x04-sandpiles](./0x04-sandpiles)
+* This directory is for practicing algorithms.
