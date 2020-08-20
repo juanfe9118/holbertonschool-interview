@@ -15,3 +15,6 @@
 
 #### [0x04-sandpiles](./0x04-sandpiles)
 * This directory is for practicing algorithms.
+
+#### [0x05-linked_list_palindrome](./0x05-linked_list_palindrome)
+* This directory is for practicing algorithms.
