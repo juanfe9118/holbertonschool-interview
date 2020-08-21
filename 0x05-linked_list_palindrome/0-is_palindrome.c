@@ -9,24 +9,24 @@
  */
 int palindrome_check(listint_t **head, int length)
 {
-    int n_array[length], i;
-    listint_t *temp = *head;
+	int n_array[length], i;
+	listint_t *temp = *head;
 
-    for (i = 0; i < length; i++)
-    {
-        n_array[i] = temp->n;
-        temp = temp->next;
-    }
-    i = 0;
-    length--;
-    while (i < length)
-    {
-        if (n_array[i] != n_array[length])
-            return (0);
-        i++;
-        length--;
-    }
-    return (1);
+	for (i = 0; i < length; i++)
+	{
+		n_array[i] = temp->n;
+		temp = temp->next;
+	}
+	i = 0;
+	length--;
+	while (i < length)
+	{
+		if (n_array[i] != n_array[length])
+			return (0);
+		i++;
+		length--;
+	}
+	return (1);
 }
 
 /**
@@ -36,15 +36,15 @@ int palindrome_check(listint_t **head, int length)
  */
 int is_palindrome(listint_t **head)
 {
-    int l_length = 0;
-    listint_t *temp = *head;
+	int l_length = 0;
+	listint_t *temp = *head;
 
-    while (temp)
-    {
-        l_length++;
-        temp = temp->next;
-    }
-    if (l_length <= 1)
-        return (1);
-    return (palindrome_check(head, l_length));
+	while (temp)
+	{
+		l_length++;
+		temp = temp->next;
+	}
+	if (l_length <= 1)
+		return (1);
+	return (palindrome_check(head, l_length));
 }
