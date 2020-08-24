@@ -7,44 +7,41 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int l_length = 0;
-	listint_t *temp = *head;
+	listint_t *start = *head, *end = *head;
 
-	while (temp)
-	{
-		l_length++;
-		temp = temp->next;
-	}
-	if (l_length <= 1)
+	if (!head || !*head)
 		return (1);
-	return (palindrome_check(head, l_length));
+
+	if (!palindrome_check(start, end))
+		return (0);
+
+	return (1);
 }
 
 /**
- * palindrome_check - checks if a linked list is a palindrome by casting
- * it to an array
- * @head: Pointer to the head of the list
- * @length: length of the linked list
- * Return: 0 if it is not a palindrome and 1 if it is
+ * palindrome_check - checks if a linked list is a palindrome using recursion
+ * @start: Pointer to the head of the list
+ * @end: Node 
+ * Return: pointer if it is a palindrome, NULL otherwise
  */
-int palindrome_check(listint_t **head, int length)
+listint_t *palindrome_check(listint_t *start, listint_t *end)
 {
-	int n_array[length], i;
-	listint_t *temp = *head;
+	listint_t *temp = NULL;
 
-	for (i = 0; i < length; i++)
+	if (end)
 	{
-		n_array[i] = temp->n;
-		temp = temp->next;
+		temp = palindrome_check(start, end->next);
+
+		if (!temp)
+			return (NULL);
+
+		if (temp->n != end->n)
+			return (NULL);
+
+		if (!temp->next)
+			return (temp);
+
+		return (temp->next);
 	}
-	i = 0;
-	length--;
-	while (i < length)
-	{
-		if (n_array[i] != n_array[length])
-			return (0);
-		i++;
-		length--;
-	}
-	return (1);
+	return (start);
 }
