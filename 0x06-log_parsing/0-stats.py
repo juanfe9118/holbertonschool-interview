@@ -32,6 +32,8 @@ if __name__ == "__main__":
         for line in stdin:
             try:
                 items = line.split()
+                if len(items) != 9:
+                    pass
                 size += int(items[-1])
                 if items[-2] in status_codes:
                     status_codes[items[-2]] += 1
