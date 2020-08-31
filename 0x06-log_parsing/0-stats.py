@@ -17,14 +17,13 @@ status_codes = {
 
 size = 0
 
+
 def print_stats():
     """Prints the accumulated logs"""
     print("File size: {}".format(size))
     for status in sorted(status_codes.keys()):
         if status_codes[status]:
             print("{}: {}".format(status, status_codes[status]))
-
-
 
 if __name__ == "__main__":
     count = 0
