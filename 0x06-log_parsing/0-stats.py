@@ -32,8 +32,6 @@ if __name__ == "__main__":
         for line in stdin:
             try:
                 items = line.split()
-                if len(items) != 9:
-                    pass
                 size += int(items[-1])
                 if items[-2] in status_codes:
                     status_codes[items[-2]] += 1
@@ -41,7 +39,7 @@ if __name__ == "__main__":
                 pass
             if count == 9:
                 print_stats()
-                count = 0
+                count = -1
             count += 1
     except KeyboardInterrupt:
         print_stats()
