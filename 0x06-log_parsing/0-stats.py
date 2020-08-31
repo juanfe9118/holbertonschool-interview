@@ -25,17 +25,21 @@ def print_stats():
         if status_codes[status]:
             print("{}: {}".format(status, status_codes[status]))
 
+def parse_line(line):
+    """Parses the line and assigns the value"""
+    try:
+        items = line.split()
+        size += int(items[-1])
+        if items[-2] in status_codes:
+            status_codes[items[-2]] += 1
+    except:
+        pass
+
 if __name__ == "__main__":
     count = 0
     for line in stdin:
         try:
-            try:
-                items = line.split()
-                size += int(items[-1])
-                if items[-2] in status_codes:
-                    status_codes[items[-2]] += 1
-            except:
-                pass
+            parse_line(line)
             if count == 9:
                 print_stats()
                 count = 0
