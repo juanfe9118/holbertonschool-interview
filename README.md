@@ -33,3 +33,7 @@
 #### [0x07-linked_list_cycle](./0x07-linked_list_cycle)
 
 - This directory is for practicing algorithms.
+
+#### [0x08-palindrome_integer](./0x08-palindrome_integer)
+
+- This directory is for practicing algorithms.
