@@ -27,7 +27,7 @@ def validUTF8(data):
                 return False
         else:
 
-            if not  symbol & bit1 and not  symbol & bit2)):
+            if not (symbol & bit1 and not (symbol & bit2)):
                 return False
         byte_cnt -= 1
 
