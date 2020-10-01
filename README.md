@@ -38,6 +38,10 @@
 
 - This directory is for practicing algorithms.
 
+#### [0x09-utf8_validation](./0x09-utf8_validation)
+
+- This directory is for practicing algorithms.
+
 #### [0x0A-slide_line](./0x0A-slide_line)
 
 - This directory is for practicing algorithms.
