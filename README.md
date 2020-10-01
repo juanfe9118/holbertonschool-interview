@@ -37,3 +37,7 @@
 #### [0x08-palindrome_integer](./0x08-palindrome_integer)
 
 - This directory is for practicing algorithms.
+
+#### [0x0A-slide_line](./0x0A-slide_line)
+
+- This directory is for practicing algorithms.
