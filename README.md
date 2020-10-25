@@ -49,3 +49,7 @@
 #### [0x0B-menger](./0x0B-menger)
 
 - This directory is for practicing algorithms.
+
+#### [0x0C-nqueens](./0x0C-nqueens)
+
+- This directory is for practicing algorithms.
