@@ -21,17 +21,14 @@ if __name__ == "__main__":
 
     def solve_queens(row, n, solution):
         if (row == n):
-            if len(solution) == n:
-                print(solution)
-            solution.clear()
+            print(solution)
         else:
             for col in range(n):
                 placement = [row, col]
                 if valid_placement(solution, placement):
                     solution.append(placement)
                     solve_queens(row + 1, n, solution)
-            if len(solution) > 0:
-                solution.pop()
+                    solution.remove(placement)
 
     def valid_placement(solution, placement):
         for queen in solution:
