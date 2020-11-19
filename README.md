@@ -57,3 +57,7 @@
 #### [0x0D-sorted_array_to_avl](./0x0D-sorted_array_to_avl)
 
 - This directory is for practicing algorithms.
+
+#### [0x0E-linear_skip](./0x0E-linear_skip)
+
+- This directory is for practicing algorithms.
