@@ -65,3 +65,7 @@
 #### [0x0F-starwars_api](./0x0F-starwars_api)
 
 - This directory is for practicing algorithms.
+
+#### [0x10-rain](./0x10-rain)
+
+- This directory is for practicing algorithms.
