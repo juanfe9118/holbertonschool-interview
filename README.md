@@ -69,3 +69,7 @@
 #### [0x10-rain](./0x10-rain)
 
 - This directory is for practicing algorithms.
+
+#### [0x11-heap_sort](./0x11-heap_sort)
+
+- This directory is for practicing algorithms.
