@@ -73,3 +73,15 @@
 #### [0x11-heap_sort](./0x11-heap_sort)
 
 - This directory is for practicing algorithms.
+
+#### [0x12-advanced_binary_search](./0x12-advanced_binary_search)
+
+- This directory is for practicing algorithms.
+
+#### [0x13-count_it](./0x13-count_it)
+
+- This directory is for practicing algorithms.
+
+#### [0x14-heap_extract](./0x14-heap_extract)
+
+- This directory is for practicing algorithms.
