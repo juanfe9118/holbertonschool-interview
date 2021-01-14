@@ -85,3 +85,7 @@
 #### [0x14-heap_extract](./0x14-heap_extract)
 
 - This directory is for practicing algorithms.
+
+#### [0x15-infinite_multiplication](./0x15-infinite_multiplication)
+
+- This directory is for practicing algorithms.
