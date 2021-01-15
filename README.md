@@ -89,3 +89,7 @@
 #### [0x15-infinite_multiplication](./0x15-infinite_multiplication)
 
 - This directory is for practicing algorithms.
+
+#### [0x16-rotate_2d_matrix](./0x16-rotate_2d_matrix)
+
+- This directory is for practicing algorithms.
