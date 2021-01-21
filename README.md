@@ -93,3 +93,7 @@
 #### [0x16-rotate_2d_matrix](./0x16-rotate_2d_matrix)
 
 - This directory is for practicing algorithms.
+
+#### [0x17-find_the_loop](./0x17-find_the_loop)
+
+- This directory is for practicing algorithms.
