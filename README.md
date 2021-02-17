@@ -97,3 +97,7 @@
 #### [0x17-find_the_loop](./0x17-find_the_loop)
 
 - This directory is for practicing algorithms.
+
+#### [0x18-merge_sort](./0x18-merge_sort)
+
+- This directory is for practicing algorithms.
