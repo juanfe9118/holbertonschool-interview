@@ -101,3 +101,7 @@
 #### [0x18-merge_sort](./0x18-merge_sort)
 
 - This directory is for practicing algorithms.
+
+#### [0x19-making_change](./0x19-making_change)
+
+- This directory is for practicing algorithms.
