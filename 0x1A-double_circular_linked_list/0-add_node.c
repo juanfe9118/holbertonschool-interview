@@ -8,28 +8,29 @@
  */
 List *add_node_end(List **list, char *str)
 {
-    List *new = NULL, *first = *list, *last = *list;
+	List *new = NULL, *first = *list, *last = *list;
 
-    new = malloc(sizeof(List));
-    if (new == NULL)
-        return (NULL);
+	new = malloc(sizeof(List));
+	if (new == NULL)
+		return (NULL);
 
-    new->str = str;
+	new->str = str;
 
-    while (last || last->next || last->next != first)
-        last = last->next;
-    
-    new->next = first;
-    new->prev = last;
-    if (first)
-        first->prev = new;
-    
-    if (last)
-        last->next = new;
+	while (last && last->next && last->next != first)
+		last = last->next;
 
-    return (new);
+	new->next = first;
+	new->prev = last;
+	if (first)
+		first->prev = new;
+	else
+		*list = new;
+
+	if (last)
+		last->next = new;
+
+	return (new);
 }
-
 
 /**
  * add_node_begin - adds a node at the beginning of a double circular linked
@@ -40,26 +41,26 @@ List *add_node_end(List **list, char *str)
  */
 List *add_node_begin(List **list, char *str)
 {
-    List *new = NULL, *first = *list, *last = *list;
+	List *new = NULL, *first = *list, *last = *list;
 
-    new = malloc(sizeof(List));
-    if (new == NULL)
-        return (NULL);
+	new = malloc(sizeof(List));
+	if (new == NULL)
+		return (NULL);
 
-    new->str = str;
+	new->str = str;
 
-    while (last || last->next || last->next != first)
-        last = last->next;
-    
-    new->next = first;
-    new->prev = last;
-    if (first)
-        first->prev = new;
-    
-    if (last)
-        last->next = new;
+	while (last && last->next && last->next != first)
+		last = last->next;
 
-    *list = new;
+	new->next = first;
+	new->prev = last;
+	if (first)
+		first->prev = new;
 
-    return (new);
+	if (last)
+		last->next = new;
+
+	*list = new;
+
+	return (new);
 }
