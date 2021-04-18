@@ -105,3 +105,7 @@
 #### [0x19-making_change](./0x19-making_change)
 
 - This directory is for practicing algorithms.
+
+#### [0x1A-double_circular_linked_list](./0x1A-double_circular_linked_list)
+
+- This directory is for practicing algorithms.
