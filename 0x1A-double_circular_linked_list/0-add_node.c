@@ -19,15 +19,26 @@ List *add_node_end(List **list, char *str)
 	while (last && last->next && last->next != first)
 		last = last->next;
 
-	new->next = first;
-	new->prev = last;
 	if (first)
+	{
+		new->next = first;
 		first->prev = new;
+	}
+
 	else
+	{
 		*list = new;
+		new->next = new;
+	}
 
 	if (last)
+	{
+		new->prev = last;
 		last->next = new;
+	}
+
+	else
+		new->prev = new;
 
 	return (new);
 }
@@ -52,13 +63,23 @@ List *add_node_begin(List **list, char *str)
 	while (last && last->next && last->next != first)
 		last = last->next;
 
-	new->next = first;
-	new->prev = last;
 	if (first)
+	{
+		new->next = first;
 		first->prev = new;
+	}
+
+	else
+		new->next = new;
 
 	if (last)
+	{
+		new->prev = last;
 		last->next = new;
+	}
+
+	else
+		new->prev = new;
 
 	*list = new;
 
