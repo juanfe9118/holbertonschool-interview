@@ -1,6 +1,25 @@
 #include "substring.h"
 
 /**
+ * check_in_array - return 1 if 'ans' is not in array 'arr'
+ * @arr: an array of integers
+ * @len: the length of the array 'arr'
+ * @ans: the value to check for
+ * Return: 1 if value not found, else 0
+ */
+int check_in_array(int *arr, int len, int ans)
+{
+	int i = 0;
+
+	for (i = 0; i < len; i++)
+	{
+		if (arr[i] == ans)
+			return (0);
+	}
+	return (1);
+}
+
+/**
  * check_word - returns true (1) if a word matches a substring
  * @str: a string
  * @word: an array of words
@@ -10,9 +29,9 @@ int check_word(char const *str, char const *word)
 {
 	int i = 0;
 
-	for (i = 0; word[i] != '\0'; i++)
+	for (i = 0; *(word + i) != '\0'; i++)
 	{
-		if (str[i] != word[i])
+		if (*(str + i) != *(word + i))
 			return (0);
 	}
 	return (1);
@@ -46,7 +65,7 @@ int match(char const *s, char const **words, int nb_words, int word_len)
 		for (j = 0; j < nb_words; j++)
 		{
 			in_array = check_in_array(checked, checked_len, j);
-			if (in_array && check_word((s[i * word_len]), words[j]))
+			if (in_array && check_word((s + (i * word_len)), words[j]))
 			{
 				checked[checked_len] = j;
 				checked_len++;
@@ -62,25 +81,6 @@ int match(char const *s, char const **words, int nb_words, int word_len)
 	}
 	free(checked);
 	return (match);
-}
-
-/**
- * check_in_array - return 1 if 'ans' is not in array 'arr'
- * @arr: an array of integers
- * @len: the length of the array 'arr'
- * @ans: the value to check for
- * Return: 1 if value not found, else 0
- */
-int check_in_array(int *arr, int len, int ans)
-{
-	int i = 0;
-
-	for (i = 0; i < len; i++)
-	{
-		if (arr[i] == ans)
-			return (0);
-	}
-	return (1);
 }
 
 /**
