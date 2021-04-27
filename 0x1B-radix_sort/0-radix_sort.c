@@ -1,4 +1,4 @@
-#include "radix_sort.h"
+#include "sort.h"
 
 /**
  * find_max - find the maximun value number in a array
