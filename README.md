@@ -118,6 +118,10 @@
 
 - This directory is for practicing algorithms.
 
+#### [0x1D-avl_trees](./0x1D-avl_trees)
+
+- This directory is for practicing algorithms.
+
 #### [0x21-substring](./0x21-substring)
 
 - This directory is for practicing algorithms.
