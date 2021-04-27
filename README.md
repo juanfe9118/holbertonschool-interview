@@ -114,6 +114,10 @@
 
 - This directory is for practicing algorithms.
 
+#### [0x1C-island_perimeter](./0x1C-island_perimeter)
+
+- This directory is for practicing algorithms.
+
 #### [0x21-substring](./0x21-substring)
 
 - This directory is for practicing algorithms.
